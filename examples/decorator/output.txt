@@ -1,0 +1,67 @@
+========== Example: init of Alice ==========
+A new Person instance is being created by examples.decorator.alice_and_bob.main:44: args=(12345678901, 'Alice', 'Female', datetime.date(1990, 3, 7), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12345678901 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:18)
+Change in Person instance (repr unavailable) attribute name: to Alice from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:19)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:20)
+Change in Person instance (12345678901 - Alice) attribute date_of_birth: to 1990-03-07 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:21)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to None from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:22)
+Change in Person instance (12345678901 - Alice) attribute children: to [] from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:23)
+
+========== Example: children ==========
+A new Person instance is being created by examples.decorator.alice_and_bob.Person.have_child:28: args=(12312312301, 'Charles', 'Male', datetime.date(2025, 3, 16), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12312312301 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:18)
+Change in Person instance (repr unavailable) attribute name: to Charles from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:19)
+Change in Person instance (12312312301 - Charles) attribute gender: to Male from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:20)
+Change in Person instance (12312312301 - Charles) attribute date_of_birth: to 2025-03-16 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:21)
+Change in Person instance (12312312301 - Charles) attribute date_of_death: to None from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:22)
+Change in Person instance (12312312301 - Charles) attribute children: to [] from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles] from [] (by examples.decorator.alice_and_bob.Person.have_child:29)
+A new Person instance is being created by examples.decorator.alice_and_bob.Person.have_child:28: args=(12312312302, 'Davey', 'Male', datetime.date(2025, 3, 16), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12312312302 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:18)
+Change in Person instance (repr unavailable) attribute name: to Davey from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:19)
+Change in Person instance (12312312302 - Davey) attribute gender: to Male from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:20)
+Change in Person instance (12312312302 - Davey) attribute date_of_birth: to 2025-03-16 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:21)
+Change in Person instance (12312312302 - Davey) attribute date_of_death: to None from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:22)
+Change in Person instance (12312312302 - Davey) attribute children: to [] from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey] from [12312312301 - Charles] (by examples.decorator.alice_and_bob.Person.have_child:29)
+A new Person instance is being created by examples.decorator.alice_and_bob.Person.adopt_child:34: args=(99889988771, 'Fatima', 'Female', datetime.date(2024, 2, 2), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 99889988771 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:18)
+Change in Person instance (repr unavailable) attribute name: to Fatima from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:19)
+Change in Person instance (99889988771 - Fatima) attribute gender: to Female from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:20)
+Change in Person instance (99889988771 - Fatima) attribute date_of_birth: to 2024-02-02 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:21)
+Change in Person instance (99889988771 - Fatima) attribute date_of_death: to None from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:22)
+Change in Person instance (99889988771 - Fatima) attribute children: to [] from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey] (by examples.decorator.alice_and_bob.Person.adopt_child:35)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] (by examples.decorator.alice_and_bob.get_rid_of_child:59)
+
+========== Example: gender ==========
+Change in Person instance (12345678901 - Alice) attribute name: to Bob from Alice (by examples.decorator.alice_and_bob.change_gender:70)
+Change in Person instance (12345678901 - Bob) attribute gender: to Male from Female (by examples.decorator.alice_and_bob.change_gender:71)
+Change in Person instance (12345678901 - Bob) attribute name: to Alice from Bob (by examples.decorator.alice_and_bob.change_gender:70)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from Male (by examples.decorator.alice_and_bob.change_gender:71)
+
+========== Example: safari trip gone wrong ==========
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to 2025-03-16 from None (by examples.decorator.alice_and_bob.pet_lion:88)
+
+========== Example: log full history of Alice ==========
+===== All mutations for Person instance 12345678901 - Alice =====
+Created by: examples.decorator.alice_and_bob.main:44
+Last mutation by: examples.decorator.alice_and_bob.pet_lion:88
+Filled by: None
+Number of attribute mutations: 15
+Change in Person instance (12345678901 - Alice) attribute social_security_number: to 12345678901 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:18)
+Change in Person instance (12345678901 - Alice) attribute name: to Alice from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:19)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:20)
+Change in Person instance (12345678901 - Alice) attribute date_of_birth: to 1990-03-07 from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:21)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to None from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:22)
+Change in Person instance (12345678901 - Alice) attribute children: to [] from AttributeDoesNotExist (by examples.decorator.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles] from [] (by examples.decorator.alice_and_bob.Person.have_child:29)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey] from [12312312301 - Charles] (by examples.decorator.alice_and_bob.Person.have_child:29)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey] (by examples.decorator.alice_and_bob.Person.adopt_child:35)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] (by examples.decorator.alice_and_bob.get_rid_of_child:59)
+Change in Person instance (12345678901 - Alice) attribute name: to Bob from Alice (by examples.decorator.alice_and_bob.change_gender:70)
+Change in Person instance (12345678901 - Alice) attribute gender: to Male from Female (by examples.decorator.alice_and_bob.change_gender:71)
+Change in Person instance (12345678901 - Alice) attribute name: to Alice from Bob (by examples.decorator.alice_and_bob.change_gender:70)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from Male (by examples.decorator.alice_and_bob.change_gender:71)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to 2025-03-16 from None (by examples.decorator.alice_and_bob.pet_lion:88)
+Thank you for trying the example with the decorator track_mutations!

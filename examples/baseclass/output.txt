@@ -1,0 +1,67 @@
+========== Example: init of Alice ==========
+A new Person instance is being created by examples.baseclass.alice_and_bob.main:46: args=(12345678901, 'Alice', 'Female', datetime.date(1990, 3, 7), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12345678901 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:20)
+Change in Person instance (repr unavailable) attribute name: to Alice from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:21)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:22)
+Change in Person instance (12345678901 - Alice) attribute date_of_birth: to 1990-03-07 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to None from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:24)
+Change in Person instance (12345678901 - Alice) attribute children: to [] from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:25)
+
+========== Example: children ==========
+A new Person instance is being created by examples.baseclass.alice_and_bob.Person.have_child:30: args=(12312312301, 'Charles', 'Male', datetime.date(2025, 3, 16), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12312312301 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:20)
+Change in Person instance (repr unavailable) attribute name: to Charles from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:21)
+Change in Person instance (12312312301 - Charles) attribute gender: to Male from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:22)
+Change in Person instance (12312312301 - Charles) attribute date_of_birth: to 2025-03-16 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:23)
+Change in Person instance (12312312301 - Charles) attribute date_of_death: to None from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:24)
+Change in Person instance (12312312301 - Charles) attribute children: to [] from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:25)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles] from [] (by examples.baseclass.alice_and_bob.Person.have_child:31)
+A new Person instance is being created by examples.baseclass.alice_and_bob.Person.have_child:30: args=(12312312302, 'Davey', 'Male', datetime.date(2025, 3, 16), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 12312312302 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:20)
+Change in Person instance (repr unavailable) attribute name: to Davey from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:21)
+Change in Person instance (12312312302 - Davey) attribute gender: to Male from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:22)
+Change in Person instance (12312312302 - Davey) attribute date_of_birth: to 2025-03-16 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:23)
+Change in Person instance (12312312302 - Davey) attribute date_of_death: to None from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:24)
+Change in Person instance (12312312302 - Davey) attribute children: to [] from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:25)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey] from [12312312301 - Charles] (by examples.baseclass.alice_and_bob.Person.have_child:31)
+A new Person instance is being created by examples.baseclass.alice_and_bob.Person.adopt_child:36: args=(99889988771, 'Fatima', 'Female', datetime.date(2024, 2, 2), []), kwargs={}
+Change in Person instance (repr unavailable) attribute social_security_number: to 99889988771 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:20)
+Change in Person instance (repr unavailable) attribute name: to Fatima from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:21)
+Change in Person instance (99889988771 - Fatima) attribute gender: to Female from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:22)
+Change in Person instance (99889988771 - Fatima) attribute date_of_birth: to 2024-02-02 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:23)
+Change in Person instance (99889988771 - Fatima) attribute date_of_death: to None from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:24)
+Change in Person instance (99889988771 - Fatima) attribute children: to [] from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:25)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey] (by examples.baseclass.alice_and_bob.Person.adopt_child:37)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] (by examples.baseclass.alice_and_bob.get_rid_of_child:61)
+
+========== Example: gender ==========
+Change in Person instance (12345678901 - Alice) attribute name: to Bob from Alice (by examples.baseclass.alice_and_bob.change_gender:72)
+Change in Person instance (12345678901 - Bob) attribute gender: to Male from Female (by examples.baseclass.alice_and_bob.change_gender:73)
+Change in Person instance (12345678901 - Bob) attribute name: to Alice from Bob (by examples.baseclass.alice_and_bob.change_gender:72)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from Male (by examples.baseclass.alice_and_bob.change_gender:73)
+
+========== Example: safari trip gone wrong ==========
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to 2025-03-16 from None (by examples.baseclass.alice_and_bob.pet_lion:90)
+
+========== Example: log full history of Alice ==========
+===== All mutations for Person instance 12345678901 - Alice =====
+Created by: examples.baseclass.alice_and_bob.main:46
+Last mutation by: examples.baseclass.alice_and_bob.pet_lion:90
+Filled by: None
+Number of attribute mutations: 15
+Change in Person instance (12345678901 - Alice) attribute social_security_number: to 12345678901 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:20)
+Change in Person instance (12345678901 - Alice) attribute name: to Alice from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:21)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:22)
+Change in Person instance (12345678901 - Alice) attribute date_of_birth: to 1990-03-07 from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:23)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to None from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:24)
+Change in Person instance (12345678901 - Alice) attribute children: to [] from AttributeDoesNotExist (by examples.baseclass.alice_and_bob.Person.__init__:25)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles] from [] (by examples.baseclass.alice_and_bob.Person.have_child:31)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey] from [12312312301 - Charles] (by examples.baseclass.alice_and_bob.Person.have_child:31)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey] (by examples.baseclass.alice_and_bob.Person.adopt_child:37)
+Change in Person instance (12345678901 - Alice) attribute children: to [12312312302 - Davey, 99889988771 - Fatima] from [12312312301 - Charles, 12312312302 - Davey, 99889988771 - Fatima] (by examples.baseclass.alice_and_bob.get_rid_of_child:61)
+Change in Person instance (12345678901 - Alice) attribute name: to Bob from Alice (by examples.baseclass.alice_and_bob.change_gender:72)
+Change in Person instance (12345678901 - Alice) attribute gender: to Male from Female (by examples.baseclass.alice_and_bob.change_gender:73)
+Change in Person instance (12345678901 - Alice) attribute name: to Alice from Bob (by examples.baseclass.alice_and_bob.change_gender:72)
+Change in Person instance (12345678901 - Alice) attribute gender: to Female from Male (by examples.baseclass.alice_and_bob.change_gender:73)
+Change in Person instance (12345678901 - Alice) attribute date_of_death: to 2025-03-16 from None (by examples.baseclass.alice_and_bob.pet_lion:90)
+Thank you for trying the example with the baseclass MutationTrackedObject!

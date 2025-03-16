@@ -1,7 +1,7 @@
 import inspect
 import traceback
 
-from mutationtracker.metaclass.access import Access
+from mutationtracker.access import Access
 from mutationtracker.ledger import MutationLedger
 from mutationtracker.utils import do_nothing
 

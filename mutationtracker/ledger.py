@@ -146,7 +146,9 @@ class MutationLedger:
 
     @staticmethod
     def _set_filler(caller: Caller, attribute_value: any) -> None:
-        if hasattr(attribute_value, "MUTATIONS") and isinstance(attribute_value.MUTATIONS, MutationLedger):
+        if hasattr(attribute_value, "MUTATIONS") and isinstance(
+            attribute_value.MUTATIONS, MutationLedger
+        ):
             attribute_value.MUTATIONS.set_filler(caller)
 
     @staticmethod

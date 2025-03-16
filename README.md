@@ -53,7 +53,7 @@ class YourClass:
         ...
 ```
 Your class will automatically contain the `MUTATIONS` attribute holding the full mutation history of the instance. 
-For an extensive enjoyable example, try <a href='#example'>code below.</a>
+For an extensive enjoyable example, try <a href='#example1'>code below.</a>
 
 <span id='example1'></span>
 ## Example 1: MutationTrackedObject base class
@@ -473,7 +473,7 @@ Often this is desirable, but it might be undesirable in some cases. If that's th
 
 <span id='releasenotes'></span>
 ## Release notes
-No changes since initial release v1.0.0
+No changes since initial release v1.0.1
 
 <span id='hyperlinks'></span>
 ## Useful links
